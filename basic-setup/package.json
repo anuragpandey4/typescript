@@ -8,10 +8,22 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
-    "multiply": "tsc && node multiplier.ts"
+    "multiply": "tsc && node multiplier.ts",
+    "start": "node index.ts",
+    "dev": "concurrently \"tsc --watch\" \"node --watch index.ts\"",
+    "lint": "eslint ."
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/express": "^5.0.6",
     "@types/node": "^26.2.0",
-    "typescript": "^7.0.2"
+    "concurrently": "^10.0.4",
+    "eslint": "^10.8.1",
+    "typescript": "^7.0.2",
+    "typescript-eslint": "^8.66.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
