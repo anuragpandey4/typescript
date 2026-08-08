@@ -3,3 +3,4 @@ const multiplicator = (a, b, printText) => {
 }
 
 multiplicator(2, 4, 'Multiplied numbers 2 and 4, the result is:');
+
