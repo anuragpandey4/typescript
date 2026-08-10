@@ -1,5 +1,5 @@
-import diaryData from '../../data/entries.json' with { type: "json" };
-import type { DiaryEntry } from '../../data/types.ts';
+import diaryData from '../../data/entries.ts';
+import type { DiaryEntry } from '../types.ts';
 
 const diaries: DiaryEntry[] = diaryData as DiaryEntry[];
 
